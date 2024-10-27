@@ -1,6 +1,6 @@
 # EventBridge-Fargate-Research
 
-[Setup Process](setup.md)
+[Setup Process](Setup.md)
 
 [List of Necessities](ListNecessity.md)
 
