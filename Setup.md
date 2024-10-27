@@ -179,7 +179,7 @@ In your account (where ECS is running), create an IAM role that the ECS Fargate 
 
 Example IAM Role Policy for ECS Task:
 
-```json
+```tf
 resource "aws_iam_policy" "cross_account_s3_access" {
   name        = "CrossAccountS3AccessPolicy"
   description = "Policy for ECS task to access S3 bucket in another account"
