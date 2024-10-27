@@ -1,6 +1,7 @@
 To set up an AWS EventBridge rule to trigger an ECS Fargate task when a file is uploaded to an S3 bucket in another account, here’s a step-by-step guide with considerations for integrating with your company’s infrastructure using Terraform, Jules, and Spinnaker.
 
 **1. Set Up S3 Bucket Permissions** 
+
 Since the S3 bucket is in a different AWS account, you need to grant permissions for your account to receive events when a file is uploaded. In the bucket owner's account:
 
 Go to the S3 bucket in the other account.
@@ -29,7 +30,9 @@ Example bucket policy for S3 event notification permissions:
 }
 ```
 
+
 **2. Configure EventBridge Rule in Your Account**
+
 Use Terraform to define an EventBridge rule that listens for S3 event notifications:
 
 ```tf
